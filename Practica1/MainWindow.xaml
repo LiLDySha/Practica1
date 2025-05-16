@@ -7,6 +7,159 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Я пока" Width="60" Height="30" HorizontalAlignment="Center" />
-    </Grid>
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="204*" Name="ChoiseWindow"></ColumnDefinition>
+        <ColumnDefinition Width="242*" Name="FirstWindow"></ColumnDefinition>
+        <ColumnDefinition Width="235*"/>
+        <ColumnDefinition Width="119*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+
+        <RowDefinition Height="170*"></RowDefinition>
+        <RowDefinition Height="102*"></RowDefinition>
+        <RowDefinition Height="29*"/>
+        <RowDefinition Height="133.039"/>
+
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Column="0" Grid.RowSpan="4"/>
+    <Expander Header="Компания"  Background="White" HorizontalAlignment="Left" RenderTransformOrigin="0.503,0.501" Margin="0,0,0,-16" Grid.RowSpan="4" Width="161">
+
+        <StackPanel Background="LightGray">
+            <RadioButton Content ="Лнит" IsChecked="True" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content ="Лнит" />
+            <RadioButton Content="СКБ Контур"/>
+            <RadioButton Content="Ростех"/>
+            <RadioButton Content="Ростелеком"/>
+            <RadioButton Content="Cisco"/>
+            <RadioButton Content="Asbis"/>
+            <RadioButton Content="Asbis"/>
+        </StackPanel>
+
+
+
+    </Expander>
+
+
+
+
+
+
+    <StackPanel Grid.Column="1" Grid.ColumnSpan="3">
+
+        <GroupBox Header="Компиляторы" HorizontalAlignment="Left" Width="244" Height="170">
+
+            <StackPanel>
+                <CheckBox Content="Visual Studio" IsChecked="True"></CheckBox>
+                <CheckBox Content="Visual Studio Code"></CheckBox>
+                <CheckBox Content="XCode"></CheckBox>
+                <CheckBox Content="PyCharm"></CheckBox>
+                <CheckBox Content="Spyder"></CheckBox>
+                <CheckBox Content="Pydev" IsChecked="True"></CheckBox>
+                <CheckBox Content="Code Blocks"></CheckBox>
+                <CheckBox Content="Dev C++"></CheckBox>
+            </StackPanel>
+
+
+
+        </GroupBox>
+
+    </StackPanel>
+
+    <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="31,41,31,0">
+
+        <Button x:Name="send_button" Content="Сохранить выбор" Background="#8E9F60" HorizontalAlignment="Center" Height="50" Width="180" Foreground="#3D4653" FontFamily="Arial Black"/>
+
+    </StackPanel>
+
+    <StackPanel Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1" VerticalAlignment="Top" Margin="31,41,31,0" >
+
+        <Button x:Name="drop_button" Content="Отменить выбор" Background="#FFAF5D44" HorizontalAlignment="Center" Height="50" Width="180" Foreground="#3D4653" FontFamily="Arial Black"/>
+
+    </StackPanel>
+
+    <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Margin="0,4,5,10" Grid.Row="3">
+
+        <GroupBox HorizontalAlignment="Left">
+
+            <TextBlock TextWrapping="Wrap">
+            <CheckBox Content="Администратор баз данных" ></CheckBox>
+            <CheckBox Content="Администратор вычеслительной сети" ></CheckBox>
+            <CheckBox Content="Администратор защиты" ></CheckBox>
+            <CheckBox Content="Аналитик программного обеспечения" ></CheckBox>
+            <CheckBox Content="Архитектор программного обеспечения" ></CheckBox>
+            <CheckBox Content="Ведущий программист" ></CheckBox>
+            <CheckBox Content="Контент менеджер" ></CheckBox>
+            <CheckBox Content="Тестировщик" ></CheckBox>
+            <CheckBox Content="Технический писатель" ></CheckBox>
+            <CheckBox Content="Системный аналитик" ></CheckBox>
+            </TextBlock>
+
+        </GroupBox>
+
+    </StackPanel>
+
+
+
+</Grid>
 </Window>
